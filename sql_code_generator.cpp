@@ -12,9 +12,9 @@
 SQLCodeGenerator::SQLCodeGenerator(const std::string& name)
 {
 	sqltypes["int32"] = "int(11)";
-	sqltypes["int64"] = "int(20)";
+	sqltypes["int64"] = "bigint(20)";
 	sqltypes["uint32"] = "int(11)";
-	sqltypes["uint64"] = "int(20)";
+	sqltypes["uint64"] = "bigint(20)";
 	sqltypes["double"] = "double";
 	sqltypes["float"] = "float";
 	sqltypes["bool"] = "tinyint(1)";
