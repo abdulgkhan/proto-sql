@@ -1,5 +1,9 @@
 project(proto-sql)
-cmake_minimum_required(VERSION 3.10)
+
+if (${CMAKE_VERSION} VERSION_GREATER "3.9.6")
+  cmake_minimum_required(VERSION 3.10)
+endif()
+
 include_directories(
   ${PROTOBUF_INCLUDE_DIRS}
   ${CMAKE_BINARY_DIR}/src/common/protobuf
